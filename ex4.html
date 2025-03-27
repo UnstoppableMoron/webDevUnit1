@@ -19,13 +19,15 @@
 
 
     <div id="box"></div>
-    <button id="changeColorBtn">Change Color</button>
+    <button id="changeColorBtn" onclick="changeColor()">Change Color</button>
 
     <br><br>
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+        function changeColor(){
+            document.getElementById("box").style.backgroundColor = "purple";
+        }
     </script>
 </body>
 </html>

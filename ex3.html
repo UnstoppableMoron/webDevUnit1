@@ -13,15 +13,21 @@
     <ul id="myList">
         <li>Item 1</li>
         <li>Item 2</li>
-        <li>Item 3</li>
+        <li id="thirdItem">Item 3</li>
     </ul>
-    <button onclick="insertItem()">Insert Before Second Item</button>
+    <button onclick="insertItem()">Insert Item</button>
 
     <br><br>
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+        function insertItem(){
+            const newItem = document.createElement("li");
+            const text = document.createTextNode("New Item");
+            newItem.appendChild(text);
+            document.getElementById("thirdItem")
+            document.thirdItem.appendChild(newItem);
+        }
     </script>
 </body>
 </html>
